@@ -1,0 +1,21 @@
+$prefixCls: rc-collapse
+
+
+.#{$prefixCls}
+
+  &-anim-active
+    transition: height .2s ease-out
+
+  &-header
+    @extend .h4
+    cursor: pointer
+
+  &-content
+    overflow: hidden
+
+    & > &-box
+      margin-top: 16px
+      margin-bottom: 16px
+
+    &-inactive
+      display: none
